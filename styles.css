@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+#about,
+#menu,
+#ubicacion,
+#reservas,
+#contacto {
+  scroll-margin-top: 80px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- Navbar --- */
+
+.navbar {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4b2e2e;
+  padding: 10px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  max-width: 100%;
+  max-height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #6c8a5d;
+  color: #ffffff;
+}
+
+/* --- Fin de Navbar --- */
+
+/* --- Header --- */
+
+header {
+  position: relative;
+  height: 300px;
+  color: white;
+  text-align: center;
+  font-family: "Cinzel Decorative", cursive;
+  overflow: hidden;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Fondo con imagen y oscurecimiento */
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("Imagenes/Fondos/fondo1.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.5); /* 🔹 Ajusta aquí para más o menos oscuridad */
+  z-index: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 100px; /* separa los botones horizontalmente */
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.hero-btn {
+  font-family: "Lato", sans-serif;
+  background-color: #6c8a5d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.hero-btn:hover {
+  background-color: #f3e5ab;
+  color: #4b2e2e;
+  transform: scale(1.2);
+}
+
+/* --- Fin de Header --- */
+
+/* --- About Section --- */
+
+.about {
+  background-image: url("Imagenes/Fondos/fondo2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  font-family: "Lato", sans-serif;
+  color: #ffffff; /* Asegura legibilidad si el fondo es oscuro */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about h2 {
+  font-family: "Cinzel Decorative", cursive;
+  color: #4b2e2e;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.about p {
+  font-family: "quicksand", sans-serif;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0% 40px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* --- Fin de About Section --- */
+
+/* --- Menu Section --- */
+
+.menu {
+  background-image: url("Imagenes/Fondos/fondo3.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  font-family: "Lato", sans-serif;
+  color: #ffffff; /* Asegura legibilidad si el fondo es oscuro */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.menu-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.menu h2 {
+  font-family: "Cinzel Decorative", cursive;
+  color: #4b2e2e;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.menu-item p {
+  font-family: "quicksand", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4b2e2e;
+  margin-bottom: 20px;
+}
+
+.menu-item img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.menu-item img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.menu-btn {
+  background-color: #6c8a5d;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin: 25px 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: "Lato", sans-serif;
+}
+
+.menu-btn:hover {
+  background-color: #4b2e2e;
+  color: #f3e5ab;
+  transform: scale(1.2);
+}
+
+/* --- Fin de Menu Section --- */
+
+/* --- Reservas Section --- */
+
+.reservas {
+  background-image: url("Imagenes/Fondos/fondo4.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "quicksand", sans-serif;
+  color: #4b2e2e;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.reservas h2 {
+  font-family: "Cinzel Decorative", cursive;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.reservas p {
+  font-family: "quicksand", sans-serif;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 0.5;
+}
+
+/* --- Fin de Reservas Section --- */
+
+/* --- Ubicación Section --- */
+
+.ubicacion {
+  padding: 40px 20px;
+  font-family: "quicksand", sans-serif;
+  font-weight: 500;
+  color: #4b2e2e;
+  text-align: center;
+}
+
+.ubicacion h2 {
+  font-family: "Cinzel Decorative", cursive;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.ubicacion-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap; /* para que en pantallas pequeñas se acomode */
+  text-align: left;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+.ubicacion-info {
+  flex: 1;
+  min-width: 250px;
+  margin-top: 80px;
+}
+
+.ubicacion-mapa {
+  flex: 1;
+  min-width: 200px;
+}
+
+.ubicacion address {
+  line-height: 1.8;
+  font-style: normal;
+}
+
+/* --- Fin de Ubicación Section --- */
+
+/* --- Contacto Section --- */
+
+.contacto {
+  background-image: url("Imagenes/Fondos/fondo3.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  font-family: "quicksand", sans-serif;
+  color: #4b2e2e;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-family: "Cinzel Decorative", cursive;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.contacto p {
+  font-family: "quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contacto a {
+  color: #6c8a5d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contacto a:hover {
+  text-decoration: underline;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-family: "quicksand", sans-serif;
+  font-weight: bold;
+  color: #4b2e2e;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "quicksand", sans-serif;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+}  
+
+textarea {
+  width: 100%;
+  height: 100px;
+}
+
+button {
+  background-color: #6c8a5d;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "quicksand", sans-serif;
+}
+
+button:hover {
+  background-color: #4b2e2e;
+  color: #f3e5ab;
+  transform: scale(1.05);
+}
+
+/* --- Fin de Contacto Section --- */
+
+/* --- Footer --- */
+
+footer {
+  background-color: #4b2e2e;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  font-family: "quicksand", sans-serif;
+}
+
+footer p {
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+footer a {
+  color: #f3e5ab;
+  text-decoration: none;
+}
+
+/* --- Fin de Footer --- */

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Artesanal Luna</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#top">
+        <img
+          src="Imagenes/Logo/logo cafe.png"
+          alt="Café Artesanal Luna Logo"
+          width="150"
+        />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">Nuestra historia</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#reservas">Reservas</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <header role="banner">
+      <section class="hero">
+        <h1>Café Artesanal Luna</h1>
+        <p>Tu rincón favorito para una pausa con aroma a café</p>
+        <div class="hero-buttons">
+          <a href="#about" class="hero-btn">Conoce nuestra historia</a>
+          <a href="#menu" class="hero-btn">Explora nuestro menú</a>
+        </div>
+      </section>
+    </header>
+    <main role="main">
+      <section id="about" class="about">
+        <h2>Nuestra Historia</h2>
+        <p>
+          Café Artesanal Luna nació en 2018 como un sueño de compartir el amor
+          por el café colombiano. Creemos en los encuentros reales, en las
+          pausas sin prisa y en el sabor que sólo el café bien hecho puede
+          regalar. Todo comenzó con una pequeña cafetera heredada y una pasión
+          familiar por el café de origen.
+        </p>
+      </section>
+      <section id="menu" class="menu">
+        <h2>Menú</h2>
+        <div class="menu-items">
+          <div class="menu-item">
+            <p>Café de Origen</p>
+            <img
+              src="Imagenes/Productos_Index/Cafe.webp"
+              alt="Café"
+              width="50px"
+            />
+          </div>
+          <div class="menu-item">
+            <p>Bebidas Especiales</p>
+            <img
+              src="Imagenes/Productos_Index/Bebidas.webp"
+              alt="Bebidas"
+              width="50px"
+            />
+          </div>
+          <div class="menu-item">
+            <p>Pastelería Casera</p>
+            <img
+              src="Imagenes/Productos_Index/Postre.webp"
+              alt="Pastelería"
+              width="50px"
+            />
+          </div>
+          <div class="menu-item">
+            <p>Opciones Veganas</p>
+            <img
+              src="Imagenes/Productos_Index/Vegetariano.webp"
+              alt="Vegano"
+              width="50px"
+            />
+          </div>
+        </div>
+        <div class="menu-btn">
+          <a href="#menu" class="menu-btn">Ver todo el menú</a>
+        </div>
+      </section>
+<section id="reservas" class="reservas">
+        <h2>Reservas</h2>
+        <p>
+          Para reservar una mesa, por favor contáctanos al teléfono o email
+          proporcionados.
+        </p>
+        <p>También puedes visitarnos directamente en nuestro local.</p>
+        <p>¡Te esperamos!</p>
+      </section>
+      <section id="ubicacion" class="ubicacion">
+  <h2>Ubicación</h2>
+  <div class="ubicacion-content">
+    <div class="ubicacion-info">
+      <p>Puedes encontrarnos en la Calle del Sol, 123.</p>
+      <address>
+        <strong>Email:</strong>
+        <a href="mailto:contacto@cafeartesanaluna.com">
+          contacto@cafeartesanaluna.com</a><br />
+        <strong>Teléfono:</strong> +34 123 456 789<br />
+        <strong>Dirección:</strong> Calle del Sol, 123, Madrid, España
+      </address>
+    </div>
+    <div class="ubicacion-mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.987785167809!2d-3.7037903841919795!3d40.41677587936471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42288c0dfd9f1b%3A0x4a9f6f6f0b2b2606!2sCalle%20del%20Sol%2C%20Madrid%2C%20España!5e0!3m2!1ses!2sco!4v1692217172531!5m2!1ses!2sco"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+      <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <p>
+          Si tienes alguna pregunta o comentario, no dudes en ponerte en
+          contacto con nosotros.
+        </p>
+        <form
+          action="mailto:contacto@cafeartesanaluna.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="name">Nombre:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Nombre"
+          />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Email"
+          />
+          <label for="message">Mensaje:</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            placeholder="Escribe tu mensaje aquí"
+            rows="4"
+            minlength="10"
+            maxlength="500"
+          ></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer role="contentinfo">
+      <p>&copy; 2025 Cafe Artesanal Luna. Todos los derechos reservados.</p>
+      <p>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/cafeartesanaluna" target="_blank"
+          >Facebook</a
+        >
+        |
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/cafeartesanaluna" target="_blank"
+          >Instagram</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

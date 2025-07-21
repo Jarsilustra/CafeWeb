@@ -168,7 +168,7 @@ p {
 
 .about h2 {
   font-family: "Cinzel Decorative", cursive;
-  color: #4b2e2e;
+  color: #fff;
   font-size: 2rem;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -406,7 +406,7 @@ textarea {
 input[type="text"],
 input[type="email"] {
   width: 100%;
-}  
+}
 
 textarea {
   width: 100%;

@@ -124,7 +124,10 @@ header p {
 }
 
 .menu {
-  background-color: #fff6e6;
+  background-image: url("Imagenes/Fondos/fondo5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 60px 20px;
   font-family: "Lato", sans-serif;
   color: #4b2e2e;

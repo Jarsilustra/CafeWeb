@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tu Carrito - Café Artesanal Luna</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Artesanal Luna - Carrito</title>
     <link rel="stylesheet" href="carrito_styles.css" />
-</head>
-<body>
-  <h1>Carrito de Compras</h1>
-  <div id="productos"></div>
-  <p class="total" id="total"></p>
-  <script src="carrito_script.js"></script>
-</body>
+    <link rel="icon" href="Imagenes/favicon_io/android-chrome-512x512.png" />
+  </head>
+  <body>
+    <div class="logo">
+      <img src="Imagenes/Logo/logo cafe.png" alt="Logo" width="300px">
+    </div>
+      
+    <main class="contenedor-carrito">
+      <!-- Botones -->
+      <div class="botones-carrito">
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+        <button id="finalizar-compra">Finalizar Compra</button>
+        <button id="seguir-comprando">Seguir Comprando</button>
+      </div>
+
+      <!-- Fieldset con productos -->
+      <fieldset class="carrito">
+        <legend>Productos en tu carrito</legend>
+        <div id="productos"></div>
+        <p class="total" id="total"></p>
+      </fieldset>
+    </main>
+
+    <script src="carrito_script.js"></script>
+  </body>
 </html>

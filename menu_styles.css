@@ -124,7 +124,7 @@ header p {
 }
 
 .menu {
-  background-image: url("Imagenes/Fondos/fondo5.jpg");
+  background-image: url("Imagenes/Fondos/fondo5.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -212,6 +212,27 @@ header p {
   background-color: #4b2e2e;
   transform: scale(1.05);
 }
+
+.remove-from-cart {
+  background-color: #c22727;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 8px;
+  margin-left: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.remove-from-cart:hover {
+  background-color: #4b2e2e;
+  color: #fff;
+  transform: scale(1.05);
+}
+
 
 /* --- Fin de Menu seccion --- */
 

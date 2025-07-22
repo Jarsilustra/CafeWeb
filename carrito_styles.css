@@ -1,21 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
-    body {
-      font-family: Arial, sans-serif;
-      padding: 2rem;
-      background-color: #fafafa;
-    }
-    h1 {
-      margin-bottom: 1rem;
-    }
-    .producto {
-      margin-bottom: 1rem;
-      padding: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      background: #fff;
-    }
-    .total {
-      font-weight: bold;
-      font-size: 1.2rem;
-      margin-top: 2rem;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("Imagenes/Fondos/carrito_fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Quicksand", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.logo
+
+/* Centrar todo el contenido */
+.contenedor-carrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Botones */
+.botones-carrito {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  background-color: #4b2e2e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #603c3c;
+}
+
+/* Fieldset carrito */
+.carrito {
+  width: 100%;
+  max-width: 500px;
+  border: 2px solid #4b2e2e;
+  border-radius: 10px;
+  padding: 1.5rem;
+  background-color: #f3e5a9;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #4b2e2e;
+  margin-bottom: 1rem;
+}
+
+/* Productos */
+.producto {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+/* Total */
+.total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: center;
+}

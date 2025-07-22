@@ -1,42 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu - Cafe Artesanal Luna</title>
-</head>
-<body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Artesanal Luna</title>
+    <link rel="stylesheet" href="menu_styles.css" />
+    <link rel="icon" href="Imagenes/favicon_io/android-chrome-512x512.png" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#top">
+          <img
+            src="Imagenes/Logo/logo cafe.png"
+            alt="Café Artesanal Luna Logo"
+            width="150"
+        /></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+      </ul>
+      <div id="cart">
+        <a href="carrito.html" style="text-decoration: none; color: inherit">
+          🛒 Carrito (<span id="cart-count">0</span>)
+        </a>
+      </div>
+    </nav>
     <header>
-        <h1>Menu</h1>
+      <h2>Descubre nuestro menú</h2>
+      <p>
+        En Café Artesanal Luna, cada bebida y plato es una celebración de los
+        sabores auténticos y la pasión por el café. Explora nuestras categorías
+        y encuentra tu favorito.
+      </p>
     </header>
     <main>
-        <section>
-            <h2>Cafés</h2>
-            <p>Cafe Espresso</p>
-            <img src="Imagenes/Cafe_Espresso.jpg" alt="Cafe Espresso" width="300px" />
-            <p>Cafe Americano</p>
-            <img src="Imagenes/Cafe_Americano.jpg" alt="Cafe Americano" width="300px" />
-            <p>Cafe Latte</p>
-            <img src="Imagenes/Cafe_Latte.jpg" alt="Cafe Latte" width="300px" />
-        </section>
-        <section>
-            <h2>Postres</h2>
-            <p>Pastel de Chocolate</p>
-            <img src="" alt="Pastel de Chocolate" width="300px" />
-            <p>Galletas Caseras</p>
-            <img src="" alt="Galletas Caseras" width="300px" />
-            <p>Tarta de Queso</p>
-            <img src="" alt="Tarta de Queso" width="300px" />
-        </section>
+      <section id="menu" class="menu">
+        <div class="menu-categoria" id="cafe">
+          <h3>☕ Cafés de Origen</h3>
+          <ul>
+            <li>
+              <h4>Café Luna Andina <span>$9.000</span></h4>
+              <p>
+                Suave y aromático, cultivado en las montañas del Huila. Tueste
+                medio.
+              </p>
+              <button class="add-to-cart" onclick="addToCart('Café Luna Andina', 9000)">Añadir</button>
+            </li>
+            <li>
+              <h4>Espresso Solar <span>$7.000</span></h4>
+              <p>
+                Espresso corto, intenso, con notas de cacao oscuro y almendra
+                tostada.
+              </p>
+              <button class="add-to-cart" onclick="addToCart('Espresso Solar', 7000)">Añadir</button>
+            </li>
+            <li>
+              <h4>Café Mielado <span>$10.000</span></h4>
+              <p>
+                Preparado en prensa francesa, infusionado con un toque de miel
+                natural.
+              </p>
+              <button class="add-to-cart" onclick="addToCart('Café Mielado', 10000)">
+                Añadir
+              </button>
+            </li>
+            <li>
+              <h4>Café Frío Luna Nueva <span>$11.000</span></h4>
+              <p>
+                Cold brew de 12 horas, servido con hielo y un chorrito de leche
+                de avena.
+              </p>
+              <button class="add-to-cart" onclick="addToCart('Café Frío Luna Nueva', 11000)">
+                Añadir
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-categoria" id="postres">
+          <h3>🍰 Postres Caseros</h3>
+          <ul>
+            <li>
+              <h4>Tarta de Luna Llena <span>$12.000</span></h4>
+              <p>Cheesecake de frutos rojos sobre base de galleta artesanal.</p>
+              <button class="add-to-cart" onclick="addToCart('Tarta de Luna Llena', 12000)">
+                Añadir
+              </button>
+            </li>
+            <li>
+              <h4>Brownie Rústico <span>$8.500</span></h4>
+              <p>
+                Brownie de chocolate 70% con nueces, textura húmeda y corazón
+                fundente.
+              </p>
+              <button class="add-to-cart" onclick="addToCart('Brownie Rústico', 8500)">
+                Añadir
+              </button>
+
+            </li>
+            <li>
+              <h4>Pastel de Café y Nuez <span>$10.000</span></h4>
+              <p>
+                Bizcocho suave con esencia de café y crocante de nueces
+                caramelizadas.
+              </p>
+              <button class="add-to-cart" onclick="addToCart('Pastel de Café y Nuez', 10000)">
+                Añadir
+              </button>
+            </li>
+            <li>
+              <h4>Galleta Cósmica <span>$5.000</span></h4>
+              <p>
+                Galleta gigante con chispas de chocolate y un toque de sal
+                marina.
+              </p>
+              <button class="add-to-cart" onclick="addToCart('Galleta Cósmica', 5000)">
+                Añadir
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-categoria" id="bebidas-especiales">
+          <h3>🧋 Bebidas Especiales</h3>
+          <ul>
+            <li>
+              <h4>Latte de Lavanda <span>$12.000</span></h4>
+              <p>
+                Espresso con leche vaporizada infusionada con esencia natural de
+                lavanda.
+              </p>
+              <button class="add-to-cart" onclick="addToCart('Latte de Lavanda', 12000)">
+                Añadir
+              </button>
+            </li>
+            <li>
+              <h4>Chai Lunar <span>$11.500</span></h4>
+              <p>
+                Té chai con especias y leche vegetal. Aromático y reconfortante.
+              </p>
+              <button class="add-to-cart" onclick="addToCart('Chai Lunar', 11500)">
+                Añadir
+              </button>
+            </li>
+            <li>
+              <h4>Café Doble Luna <span>$14.000</span></h4>
+              <p>
+                Doble espresso, leche vaporizada, crema batida y polvo de cacao.
+              </p>
+              <button class="add-to-cart" onclick="addToCart('Café Doble Luna', 14000)">
+                Añadir
+              </button>
+            </li>
+            <li>
+              <h4>Café Tonic <span>$13.000</span></h4>
+              <p>Espresso sobre tónica con hielo, refrescante y cítrico.</p>
+              <button class="add-to-cart" onclick="addToCart('Café Tonic', 13000)">
+                Añadir
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-categoria" id="veganos">
+          <h3>🌿 Opciones Vegetarianas</h3>
+          <ul>
+            <li>
+              <h4>Tostada Solar <span>$11.000</span></h4>
+              <p>
+                Pan artesanal con aguacate, tomate cherry, albahaca y semillas.
+              </p>
+              <button class="add-to-cart" onclick="addToCart('Tostada Solar', 11000)">
+                Añadir
+              </button>
+            </li>
+            <li>
+              <h4>Croissant Vegano Relleno <span>$9.500</span></h4>
+              <p>Masa vegana rellena de espinaca, tofu y tomate seco.</p>
+              <button class="add-to-cart" onclick="addToCart('Croissant Vegano Relleno', 9500)">
+                Añadir
+              </button>
+            </li>
+            <li>
+              <h4>Wrap de Hummus y Vegetales <span>$13.000</span></h4>
+              <p>Tortilla integral con hummus, zanahoria, rúgula y pimentón.</p>
+              <button class="add-to-cart" onclick="addToCart('Wrap de Hummus y Vegetales', 13000)">
+                Añadir
+              </button>
+            </li>
+            <li>
+              <h4>Ensalada Estelar <span>$14.000</span></h4>
+              <p>Quinoa, espinaca, mango, aguacate y vinagreta de limón.</p>
+              <button class="add-to-cart" onclick="addToCart('Ensalada Estelar', 14000)">
+                Añadir
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-        <section>
-            <h2>Bebidas Frías</h2>
-            <p>Batido de Fresa</p>
-            <img src="" alt="Batido de Fresa" width="300px" />
-            <p>Agua Fresca de Limón</p>
-            <img src="" alt="Agua Fresca de Limón" width="300px" />
-            <p>Jugo de Naranja Natural</p>
-            <img src="" alt="Jugo de Naranja Natural" width="300px" />
-        </section>
-</body>
+    <footer role="contentinfo">
+      <p>&copy; 2025 Cafe Artesanal Luna. Todos los derechos reservados.</p>
+      <p>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/cafeartesanaluna" target="_blank"
+          >Facebook</a
+        >
+        |
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/cafeartesanaluna" target="_blank"
+          >Instagram</a
+        >
+      </p>
+    </footer>
+    <script src="menu_script.js"></script>
+  </body>
 </html>

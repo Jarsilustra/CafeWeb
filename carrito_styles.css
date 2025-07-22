@@ -1,0 +1,21 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #fafafa;
+    }
+    h1 {
+      margin-bottom: 1rem;
+    }
+    .producto {
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #fff;
+    }
+    .total {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+    }

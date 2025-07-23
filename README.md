@@ -116,6 +116,12 @@ Proyecto personal de práctica en desarrollo frontend.
 
 ---
 
+**CaféWeb – Practice Frontend**
+
+![Vista previa del proyecto](Imagenes/Banner-GitHub/Banner_Coffee.png)
+
+---
+
 1. 📌 **Description**
 
 This repository contains the development of a fictional website for a coffee shop named Café Artesanal Luna, created as a personal practice to improve my skills in frontend web 

@@ -4,6 +4,8 @@
 
 **CaféWeb – Práctica Personal Frontend**
 
+![Vista previa del proyecto](Imagenes/Banner-GitHub/Banner_Coffee.png)
+
 ---
 
 1. 📌 **Descripción**

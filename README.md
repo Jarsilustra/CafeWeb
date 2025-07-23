@@ -149,7 +149,7 @@ organization for future, more complex work.
 4. 🚀 **Project preview**
 
 Check the live version of this project here:
-👉 View Demo on GitHub Pages
+👉 [**Ver Demo en GitHub Pages**](https://jarsilustra.github.io/CafeWeb/)
 
 ---
 
